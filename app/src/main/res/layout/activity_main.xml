@@ -3,12 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
     
-    <data>
-        <variable
-            name="myViewModel"
-            type="com.cycolabs.livedataviewmodeldatabinding.MainActivityViewModel" />
-    </data>
-    
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
@@ -17,7 +11,7 @@
 
         <TextView
             android:id="@+id/textView"
-            android:text="@{String.valueOf(myViewModel.countData)}"
+            android:text="TextBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="28sp"
@@ -28,16 +22,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.101"/>
 
-        <Button
-            android:id="@+id/button"
-            android:onClick="@{()->myViewModel.updateCounter()}"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="273dp"
-            android:text="Button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
