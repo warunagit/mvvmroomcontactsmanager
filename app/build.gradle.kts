@@ -60,8 +60,8 @@ dependencies {
 
     //annotation processor - kapt
     val kapt_version = "2.1.10"
-    //kapt("androidx.lifecycle:lifecycle-compiler:$lifecycle_version")
-    kapt("groupId:artifactId:$kapt_version")
+    kapt("androidx.lifecycle:lifecycle-compiler:$lifecycle_version")
+    //kapt("groupId:artifactId:$kapt_version")
 
     //ROOM
     val room_version = "2.6.1"
