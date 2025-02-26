@@ -11,9 +11,10 @@ import com.cycolabs.livedataviewmodeldatabinding.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     //create layout
     //add dependencies to gradle
-    //create data class; User, with fields and annotations
-    //create Data Access Object interface
-
+    //create User data class with fields and annotations
+    //create Data Access Object interface for User class
+    //Create UserDatabase class
+    //create UserRepository class
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
