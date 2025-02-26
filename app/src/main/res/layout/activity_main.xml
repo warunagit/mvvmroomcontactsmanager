@@ -2,6 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <variable
+            name="userViewModel"
+            type="com.cycolabs.livedataviewmodeldatabinding.ViewModel.UserViewModel" />
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
@@ -20,6 +26,7 @@
 
             <EditText
                 android:id="@+id/etName"
+                android:text="@={userViewModel.inputName}"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -36,6 +43,7 @@
 
             <EditText
                 android:id="@+id/etNumber"
+                android:text="@={userViewModel.inputEmail}"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"

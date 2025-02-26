@@ -12,8 +12,8 @@ class MainActivity : AppCompatActivity() {
     //create layout
     //add dependencies to gradle
     //create User data class with fields and annotations
-    //create Data Access Object interface for User class
-    //Create UserDatabase class
+    //create User Data Access Object interface DAO for User class
+    //create UserDatabase class
     //create UserRepository class
 
     override fun onCreate(savedInstanceState: Bundle?) {
