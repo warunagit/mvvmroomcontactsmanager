@@ -13,10 +13,10 @@ data class User(
     val id: Int,
 
     @ColumnInfo(name = "user_name")
-    val name:String,
+    var name:String,
 
     @ColumnInfo(name = "user_email")
-    val email: String
+    var email: String
 )
 //to use custom column names, those should annotate as ->
 // @ColumnInfo(name="user_id")
